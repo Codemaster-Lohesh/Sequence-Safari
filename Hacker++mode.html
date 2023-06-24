@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sequence Safari</title>
+    <link rel="stylesheet" href="Hacker++mode.css" type="text/css">
+    <script src="Hacker++mode.js" defer></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="game-title">Snake game</div>
+        <div class="toggle-button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <div class="navbar-links">
+          <ul>
+            <li><a href="Normalmode.html">Normal mode</a></li>
+            <li><a href="Hackermode.html">Hacker mode</a></li>
+            <li><a href="Hacker++mode.html">Hacker++ mode</a></li>
+          </ul>
+        </div>
+    </nav>
+    
+    <dialog id="gameoverPopup">
+      <p>SEQUENCE SAFARI</p>
+      <p>GAME OVER</p>
+      <div>
+        <div onclick="reload()">Play again</div>
+      </div>
+      
+    </dialog>
+
+    <div class="game-area">
+      <div id="top-bar">
+        <div id="score">Score: </div>
+        <div id="highscore">High score: </div>
+        <div id="target-blocks">
+          <span>Order:</span>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+      <div id="game-board"></div>
+      <div id="bottom-bar">
+        <div id="timer">Time left:  s</div>
+        <div id="lives">Lives: 3</div>
+      </div>
+      <div id="direction-control">
+        <div data-key="w">Up</div>
+        <div data-key="s">Down</div>
+        <div data-key="a">Left</div>
+        <div data-key="d">Right</div>   
+      </div>
+    </div>
+    <div id="pause">
+      <div id="pauseButton">PAUSE</div>
+      <div id="saveGame">SAVE GAME</div>
+    </div>
+    <div id="savefiles"></div>
+</body>
+</html>
+
